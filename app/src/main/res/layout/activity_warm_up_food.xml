@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools2="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools%22%3E%22%3E">
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_light_blue"
+        android:foregroundTint="#F37C7B"
+        tools:context=".activity.WarmUpFoodActivity">
+
+        <Button
+            android:id="@+id/WarmUpFoodBtn"
+            android:layout_width="195dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/custom_light_red"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="1,5 λεπτο"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.467" />
+
+        <TextView
+            android:id="@+id/WarmUpFoodText"
+            android:layout_width="215dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="352dp"
+            android:gravity="center"
+            android:text="Για ζέσταμα φαγητού"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ChoiceText"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="175dp"
+            android:text="Άλλο"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.490"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/SecMinText"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="148dp"
+            android:gravity="center"
+            android:text="Λεπτά :  Δευτερόλεπτα"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/DividerText"
+            android:layout_width="78dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="104dp"
+            android:gravity="center"
+            android:text=" : "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerMinutes"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="88dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerSeconds"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="88dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="87dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="32dp"
+            app:endIconTint="#F37C7B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop="parent"
+            tools2:ignore="MissingConstraints"
+            tools2:layout_editor_absoluteY="524dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/MinSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="00"></AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        -->
+        <TextView
+            android:id="@+id/ActivityWUFText"
+            android:layout_width="268dp"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="564dp"
+            android:gravity="center"
+            android:text="Επιλέξτε χρόνο για ζέσταμα φαγητού"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="112dp"
+            android:layout_height="107dp"
+            android:layout_marginBottom="448dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/time" />
+
+        <ImageButton
+            android:id="@+id/timerTick"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="94dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/tick3" />
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="ΠΙΣΩ"
+            android:textSize="26dp"
+            android:backgroundTint="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.962" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

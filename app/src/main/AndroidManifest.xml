@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aueb.microwave">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Microwave">
+
+
+        <activity android:name=".FoodActivity" android:exported="true"/>
+        <activity android:name=".DefrostActivity" android:exported="true"/>
+        <activity android:name=".ChooseSecondsActivity" android:exported="true"/>
+        <activity android:name=".CookingActivity" android:exported="true"/>
+        <activity android:name=".ReadyActivity" android:exported="true"/>
+        <activity android:name=".WarmUpFoodActivity" android:exported="true"/>
+        <activity android:name=".DrinkActivity" android:exported="true"/>
+        <activity android:name=".BoilDrinkActivity" android:exported="true"/>
+        <activity android:name=".WarmUpDrinkActivity" android:exported="true"/>
+        <activity android:name=".TimerActivity" android:exported="true"/>
+        <activity android:name=".FoodOrDrinkActivity" android:exported="true" />
+        <activity android:name=".VoiceCommandsActivity" android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.TTS_SERVICE" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools2="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools%22%3E%22%3E">
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_light_blue"
+        android:foregroundTint="#F37C7B"
+        tools:context=".activity.TimerActivity">
+
+
+        <TextView
+            android:id="@+id/ActivityWUFText"
+            android:layout_width="288dp"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="552dp"
+            android:gravity="center"
+            android:text="Επιλέξτε δευτερόλεπτα."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="268dp"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="292dp"
+
+            android:gravity="center"
+            android:text="00 : 00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="46dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="112dp"
+            android:layout_height="107dp"
+            android:layout_marginBottom="404dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hourglass" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
